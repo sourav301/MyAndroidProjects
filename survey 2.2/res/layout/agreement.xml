@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_width="match_parent"
+       android:layout_height="match_parent" 
+       android:background="#008000"
+	    android:padding="17dp"
+       android:orientation="vertical">
+
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/my_border" >
+  
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/main_fiish" />
+
+    <ImageButton
+        android:id="@+id/na"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dec"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="70dp"
+        android:onClick="send"
+        android:src="@drawable/na" />
+
+    <ImageButton
+        android:id="@+id/ha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dec"
+        android:layout_marginLeft="62dp"
+        android:layout_toRightOf="@+id/na"
+        android:onClick="send"
+        android:src="@drawable/ha" />
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

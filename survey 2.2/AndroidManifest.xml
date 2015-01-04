@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="your.survey"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            ></activity>
+
+    <uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/app_name" >
+         </activity>
+         
+        <activity
+            android:name=".Page1"   >
+            </activity> 
+            
+             <activity
+            android:name=".Page2"   >
+          
+            </activity> 
+            
+             <activity
+            android:name=".Page3"   >
+             
+            </activity> 
+            
+             <activity
+            android:name=".Page4"   >
+            
+            </activity> 
+            
+             <activity
+            android:name=".Page5"   >
+            
+            </activity> 
+            
+             <activity
+            android:name=".Page6"   >
+            </activity> 
+            
+             <activity
+            android:name=".Page7"   >
+            </activity> 
+            
+             <activity
+            android:name=".Page8"   >
+            </activity> 
+             <activity
+            android:name=".Page11"   >
+            </activity>
+             <activity
+            android:name=".Page12"   >
+            </activity>
+             <activity
+            android:name=".Page13"   >
+            </activity>
+             <activity
+            android:name=".Page14"   >
+            </activity>
+             <activity
+            android:name=".Page15"   >
+            </activity>
+             <activity
+            android:name=".Page16"   >
+            </activity>
+             <activity
+            android:name=".Page17"   >
+            </activity>
+             <activity
+            android:name=".Page18"   >
+            </activity>
+            
+            
+             
+             
+           
+            <activity
+            android:name=".Name"   >
+             
+            </activity>
+            
+            
+            <activity
+            android:name=".Startpage"   >
+           
+            </activity>
+            
+            <activity
+            android:name=".Password"   >
+            </activity>
+            <activity
+            android:name=".Set_details_1"   >
+            </activity>
+            <activity
+            android:name=".Set_details_2"   >
+            </activity>
+            
+            
+            <activity
+            android:name=".View_details"   >
+            
+            </activity>
+            <activity
+            android:name=".View_details_1"   >
+             
+            </activity>
+            
+            <activity
+            android:name=".Exit"   >
+            </activity>
+            
+            <activity
+            android:name=".Agreement"   >
+            </activity>
+             <activity
+            android:name=".Part1"   >
+             
+            </activity>
+            
+              <activity
+            android:name=".Part2"   >
+            </activity>
+              <activity android:name="SplashScreenActivity"
+                   android:theme="@style/Theme.Transparent">
+                  <intent-filter>
+                      <action 
+                          android:name="android.intent.action.MAIN"/>
+                      <category 
+                          android:name="android.intent.category.LAUNCHER"/>
+                  </intent-filter>
+                
+              </activity>
+            
+            
+            
+        
+       
+    </application>
+
+</manifest>

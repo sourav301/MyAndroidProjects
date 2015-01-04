@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#008000"
+	android:padding="17dp"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/my_border"
+    android:orientation="vertical" 
+    android:padding="20dp">
+	>
+
+
+    <ImageView
+        android:id="@+id/q15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/q15" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/q15"
+        android:layout_marginTop="72dp" >
+
+        <RadioButton
+            android:id="@+id/q15_1radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <RadioButton
+            android:id="@+id/q15_2radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/q15_3radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/q15__ans1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioGroup15"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/radioGroup15"
+        android:src="@drawable/q15_ans1" />
+
+    <ImageView
+        android:id="@+id/q15__ans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q15__ans1"
+        android:layout_below="@+id/q15__ans1"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/q15_ans2" />
+
+    <ImageView
+        android:id="@+id/q15__ans3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/q15__ans2"
+        android:layout_below="@+id/q15__ans2"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/q15_ans3" />
+
+    <ImageButton
+        android:id="@+id/submit15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup15"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/biboron_joma"
+        android:onClick="send"
+         />
+
+</RelativeLayout>
+</LinearLayout>
