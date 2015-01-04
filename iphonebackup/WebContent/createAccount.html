@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function formValidation(){
+	
+	
+	var name=document.forms["create"]["name"].value.trim();
+	var x=document.forms["create"]["password"].value;
+	var y=document.forms["create"]["repassword"].value;
+	
+	if(name==""){
+		alert("Username Cannot be Blank");
+		return false;
+		}
+	if(x==""){
+		alert("Password Cannot be Blank");
+		return false;
+		
+		}
+	if(x!=y){
+		alert("Passwords do not match");
+		return false;
+		}
+	else{
+	//alert("User created Successfully");
+		return true;
+	}
+	
+	
+}
+</script>
+</head>
+<body>
+
+<form name="create" action="controller" method="get" onsubmit="return formValidation()">
+  Name: <input type="text" name="name"><br>
+  Password: <input type="password" name="password"><br>
+  Retype Password: <input type="password" name="repassword"><br>
+  <input type="hidden" name="requestpage" value="createaccount">
+  <input type="submit" value="Submit">
+</form>
+
+<form action="controller" method="get">
+  <input type="hidden" name="requestpage" value="homepage">
+  <input type="submit" value="Back">
+</form>
+</body>
+</html>
